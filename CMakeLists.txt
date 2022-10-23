@@ -115,7 +115,6 @@ catkin_package(
   DEPENDS
     ${EIGEN_PACKAGE}
     GeographicLib
-    YAML_CPP
 )
 
 ###########
@@ -127,8 +126,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${YAML_CPP_INCLUDE_DIRS})
-
-link_directories(${YAML_CPP_LIBRARY_DIRS})
 
 # Library definitions
 add_library(filter_utilities src/filter_utilities.cpp)
